@@ -1,0 +1,71 @@
+<!doctype html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mouse</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function priceChanger(elem){
+            var newPrice;
+            if(elem.id == 'Small'){
+                newPrice = '$ 10';            
+               }
+            if(elem.id == 'Medium'){
+                newPrice = '$ 15';              
+               }
+            if(elem.id == 'Large'){
+                newPrice = '$ 20';              
+               }
+            var prices = document.getElementsByClassName('prices');
+            
+            for(i=0;i<prices. length;i++){
+                prices[i].textContent = newPrice;
+            }
+            }
+    </script>
+</head>
+
+<body>
+</body>
+<nav>
+    <div class="link">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    <div class="logo"><img src="Images/logo.png" alt="here" class="img1"></div>
+</nav>
+<div class="option">
+    <a href="#" id="Small" onclick="priceChanger(this)">Small</a>
+    <a href="#" id="Medium" onclick="priceChanger(this)">Medium</a>
+    <a href="#" id="Large" onclick="priceChanger(this)">Large</a>
+</div>
+<section1>
+    <div class="image1">
+        <img alt="here" class="image1" class="prices" src="Images/mouse%20thing.png">
+    </div>
+    <div class="image2">
+        <img alt="here" class="image1" class="prices" src="Images/mousethingred.png">
+    </div>
+    <div class="image3">
+        <img alt="here" class="image1" class="prices" src="Images/purplemouse.png">
+    </div>
+
+    <div class="textbox">
+        <div class="prices"> 
+        <p>
+        <h2>Red </h2></div>
+    </div>
+    <div class="textbox1">
+    <div class="prices"> 
+        <p>
+        <h2>Black </h2>
+        </div>
+    </div>
+    <div class="textbox2">
+        <div class="prices"> 
+        <p>
+        <h2>Purple </h2>
+            </div>
+    </div>
+</section1>
