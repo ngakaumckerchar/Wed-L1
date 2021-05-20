@@ -1,0 +1,147 @@
+@font-face {
+    font-family: font;
+    src: url(Fonts/t.ttf);
+}
+
+html {
+    background-image: linear-gradient(red, black);
+    height: 100vh;
+}
+
+nav a {
+    color: white;
+    font-size: 40px;
+    text-decoration: none;
+    font-family: font;
+}
+/*hover states*/
+a:hover {
+    color: grey;
+    background-color: black;
+}
+
+.link {
+    margin-left: 100px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    word-spacing: 100px;
+}
+/*grids*/
+nav {
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    grid-template-rows: 0.4fr;
+}
+section {
+    display: grid;
+    grid-template-columns: .1fr 2fr .1fr 2fr .1fr 2fr .1fr .1fr 1fr .1fr;
+    grid-template-rows: .5fr 1fr 1fr 1fr .5fr;
+}
+.section1 {
+    display: grid;
+    grid-template-columns: .5fr 1fr 1fr 1fr .5fr;
+    grid-template-rows: 1fr .2fr .5fr;
+}
+/*boxes*/
+.box1 {
+    grid-row: 2/4;
+    grid-column: 2/7;
+    background-color: black;
+}
+.box2 {
+    color: white;
+    background-color: black;
+    grid-column: 8/11;
+    grid-row: 2/3;
+    height: 100px;
+    font-size: 16px;
+}
+.textbox {
+    font-family: font;
+    background-color: white;
+    background-color: rgba(255, 0, 0, 0.3);
+    grid-row: 2/3;
+    grid-column: 3/4;
+}
+.textbox1 {
+    font-family: font;
+    background-color: white;
+    background-color: rgba(255, 0, 0, 0.3);
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+.textbox2 {
+    font-family: font;
+    background-color: white;
+    background-color: rgba(255, 0, 0, 0.3);
+    grid-row: 2/3;
+    grid-column: 4/5;
+}
+.conbox{
+    grid-row: 1/6;
+    grid-column: 4/7;
+    background-color: black;
+    color: white;
+}
+/*PriceChanger*/
+.option{
+    grid-row: 3/4;
+    grid-column: 3/4;
+    font-size: 250%;
+    align-self: center;
+}
+/*Images*/
+.logo {
+    width: 150%;
+    height: 100%;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.img1 {
+    width:25%;
+    grid-row: 2/3;
+    grid-column: 2/3;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.img2 {
+    width:25%;
+    grid-row: 2/3;
+    grid-column: 4/5;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.img3 {
+    width:25%;
+    grid-row: 2/3;
+    grid-column: 6/7;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+section img {
+    width: 50%;
+}
+.image1 {
+    width:75%;
+    height:75%;
+    grid-row: 1/2;
+    grid-column: 2/3;
+    opacity: 100%;
+}
+.image2 {
+    width:75%;
+    height:75%;
+    grid-row: 1/2;
+    grid-column: 3/4;
+    opacity: 100%;
+}
+.image3 {
+    width:75%;
+    height:75%;
+    grid-row: 1/2;
+    grid-column: 4/5;
+    opacity: 100%;
+}
